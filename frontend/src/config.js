@@ -18,4 +18,14 @@ const config = {
     STRIPE_KEY: "pk_test_51MTmowCKB1aHrLhToxTa9KqqUhf9JttynRGaubArWPHQTj4GDBlfoy7la6UmObE2zVOmSX1FnfZ3xpkb4E5SsjDR00ar3FJYEx",
 };
 
+SENTRY_DSN: Sentry.init({
+    dsn: "https://d4d506c670d34a67ad84b93d14ec8ebc@o4504627963428864.ingest.sentry.io/4504627969982464",
+    integrations: [new BrowserTracing()],
+
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+});
+
 export default config;
