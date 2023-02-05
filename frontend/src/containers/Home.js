@@ -35,9 +35,6 @@ export default function Home() {
     return API.get("notes", "/notes");
   }
 
-  function loadNotes() {
-    return API.get("notes", "/notes");
-  }
   // function renderNotesList(notes) {
   //   return null;
   // }
